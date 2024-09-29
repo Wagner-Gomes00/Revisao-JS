@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras com Preços</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Lista de Compras</h1>
+
+    <button onclick="mostrarMenu()">Mostrar Menu</button>
+
+    <div id="menu" style="display: none;">
+        <button onclick="adicionarItem()">Adicionar Item</button>
+        <button onclick="verLista()">Ver Lista</button>
+        <button onclick="removerItem()">Remover Item</button>
+        <button onclick="ordenarPorPreco()">Imprimir por Ordem de Preço</button>
+    </div>
+
+    <div id="formAdicionar" style="display: none;">
+        <label for="item">Digite o nome do item:</label>
+        <input type="text" id="item" placeholder="Nome do item"><br><br>
+
+        <label for="preco">Digite o preço do item (R$):</label>
+        <input type="number" id="preco" step="0.01" placeholder="Preço do item"><br><br>
+
+        <button onclick="inserirItem()">Inserir Item</button>
+    </div>
+
+    <div id="formRemover" style="display: none;">
+        <label for="itemRemover">Digite o nome do item a ser removido:</label>
+        <input type="text" id="itemRemover" placeholder="Nome do item">
+        <button onclick="removerItemLista()">Remover Item</button>
+    </div>
+
+    <h2>Lista de Compras:</h2>
+    <ul id="listaCompras"></ul>
+</body>
+
+</html>

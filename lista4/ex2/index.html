@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechamento de Vendas</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Fechamento de Vendas do Dia</h1>
+
+    <label for="venda">Digite o valor de uma venda (R$):</label>
+    <input type="number" id="venda" step="0.01" placeholder="Digite o valor da venda">
+    <button onclick="adicionarVenda()">Adicionar Venda</button>
+
+    <h2>Vendas do Dia:</h2>
+    <ul id="listaVendas"></ul>
+
+    <button onclick="calcularTotal()">Calcular Total de Vendas</button>
+
+    <h2>Total de Vendas: R$ <span id="total"></span></h2>
+    <h2>Compra de Menor Valor: R$ <span id="menor"></span></h2>
+    <h2>Compra de Maior Valor: R$ <span id="maior"></span></h2>
+</body>
+
+</html>

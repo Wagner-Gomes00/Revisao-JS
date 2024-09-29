@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Jogo da Adivinhação</h1>
+
+    <div id="configuracao">
+        <label for="numeroEscolhido">Escolha um número (1 a 100):</label>
+        <input type="number" id="numeroEscolhido" placeholder="Digite o número">
+        <button onclick="iniciarJogo()">Iniciar Jogo</button>
+    </div>
+
+    <div id="adivinhacao" style="display:none;">
+        <label for="tentativa">Tente adivinhar o número:</label>
+        <input type="number" id="tentativa" placeholder="Digite sua tentativa">
+        <button onclick="verificarTentativa()">Verificar</button>
+    </div>
+
+    <p id="mensagem"></p>
+</body>
+
+</html>

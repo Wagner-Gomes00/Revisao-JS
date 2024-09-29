@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade - Evento</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Verificação de Idade para Entrada no Evento</h1>
+
+    <form>
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade"><br><br>
+
+        <label>Está acompanhado dos responsáveis?</label><br>
+        <input type="radio" id="acompanhadoSim" name="acompanhado" value="sim">
+        <label for="acompanhadoSim">Sim</label><br>
+        <input type="radio" id="acompanhadoNao" name="acompanhado" value="nao">
+        <label for="acompanhadoNao">Não</label><br><br>
+
+        <button type="button" onclick="verificarEntrada()">Verificar Entrada</button>
+    </form>
+
+    <p id="resultado"></p>
+</body>
+
+</html>

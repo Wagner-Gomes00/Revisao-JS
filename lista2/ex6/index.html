@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aprovação</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Verificação de Aprovação do Aluno</h1>
+
+    <form>
+        <label for="nota1">Nota da primeira prova:</label>
+        <input type="number" id="nota1" step="0.01" placeholder="Digite a nota 1"><br><br>
+
+        <label for="nota2">Nota da segunda prova:</label>
+        <input type="number" id="nota2" step="0.01" placeholder="Digite a nota 2"><br><br>
+
+        <button type="button" onclick="verificarAprovacao()">Verificar Aprovação</button>
+    </form>
+
+    <div id="recuperacao" style="display:none;">
+        <h2>Nota de Recuperação</h2>
+        <label for="notaRecuperacao">Digite a nota de recuperação:</label>
+        <input type="number" id="notaRecuperacao" step="0.01" placeholder="Digite a nota de recuperação"><br><br>
+        <button type="button" onclick="verificarRecuperacao()">Calcular com Recuperação</button>
+    </div>
+
+    <p id="resultado"></p>
+</body>
+
+</html>

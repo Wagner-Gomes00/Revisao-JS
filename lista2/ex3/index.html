@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encaminhamento de Filas - Banco</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Encaminhamento de Filas</h1>
+
+    <p>Responda às perguntas abaixo para ser encaminhado à fila correta:</p>
+
+    <form>
+        <label for="idade">Qual é a sua idade?</label>
+        <input type="number" id="idade" placeholder="Digite sua idade"><br><br>
+
+        <label>Você é deficiente?</label><br>
+        <input type="radio" id="deficienteSim" name="deficiente" value="sim">
+        <label for="deficienteSim">Sim</label><br>
+        <input type="radio" id="deficienteNao" name="deficiente" value="nao">
+        <label for="deficienteNao">Não</label><br><br>
+
+        <label>Você é gestante?</label><br>
+        <input type="radio" id="gestanteSim" name="gestante" value="sim">
+        <label for="gestanteSim">Sim</label><br>
+        <input type="radio" id="gestanteNao" name="gestante" value="nao">
+        <label for="gestanteNao">Não</label><br><br>
+
+        <button type="button" onclick="encaminharFila()">Encaminhar para a fila</button>
+    </form>
+
+    <p id="resultado"></p>
+</body>
+
+</html>
